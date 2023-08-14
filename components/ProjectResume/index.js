@@ -9,7 +9,7 @@ const ProjectResume = ({ dates, type, position, bullets }) => {
     }
 
     setBulletsLocal(newBullletsLocal)
-  },[])
+  },[bullets])
 
   return (
     <div className="mt-5 w-full flex mob:flex-col desktop:flex-row justify-between">
