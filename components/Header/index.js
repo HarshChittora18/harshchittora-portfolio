@@ -41,26 +41,30 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </h1>
 
               <div className="flex items-center">
-                {data.darkMode && (
                   <Button
                     onClick={() =>
                       setTheme(theme === "dark" ? "light" : "dark")
                     }
+                    style={{margin:0,paddingRight:5 }}
                   >
                     <Image
                       className="h-6"
+                      width={"25%"}
+                      height={"25%"}
                       src={`/images/${
                         theme === "dark" ? "moon.svg" : "sun.svg"
                       }`}
                       alt="icon"
                     />
                   </Button>
-                )}
 
                 <Popover.Button>
                   <Image
                     className="h-5"
                     alt="icon"
+                    width={"25%"}
+                    height={"25%"}
+                    style={{marginTop:2}}
                     src={`/images/${
                       !open
                         ? theme === "dark"
@@ -86,16 +90,14 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
 
                   {showResume && (
                     <Button
-                      onClick={() =>
-                        window.open("mailto:hello@chetanverma.com")
-                      }
+                    onClick={() => router.push("/resume")}
                     >
                       Resume
                     </Button>
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
+                    onClick={() => window.open("mailto:harshchittora18@gmail.com")}
                   >
                     Contact
                   </Button>
@@ -116,7 +118,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
+                    onClick={() => window.open("mailto:harshchittora18@gmail.com")}
                   >
                     Contact
                   </Button>
@@ -133,11 +135,11 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         >
           {name}.
         </h1>
+        
         {!isBlog ? (
           <div className="flex">
             <Button onClick={handleWorkScroll}>Work</Button>
             <Button onClick={handleAboutScroll}>About</Button>
-
             {showResume && (
               <Button
                 onClick={() => router.push("/resume")}
@@ -146,21 +148,23 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 Resume
               </Button>
             )}
-
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
+            <Button onClick={() => window.open("mailto:harshchittora18@gmail.com")}>
               Contact
             </Button>
-            {mounted && theme && data.darkMode && (
+            
+            {mounted && theme  && (
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
                 <Image
                   className="h-6"
                   alt="icon"
+                  width={"25%"}
+                  height={"25%"}
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
                 />
               </Button>
-            )}
+            )}{" "}
           </div>
         ) : (
           <div className="flex">
@@ -175,7 +179,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
+            <Button onClick={() => window.open("mailto:harshchittora18@gmail.com")}>
               Contact
             </Button>
 
@@ -186,8 +190,10 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 <Image
                   className="h-6"
                   alt="icon"
+                  width={"25%"}
+                  height={"25%"}
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-               />
+                />
               </Button>
             )}
           </div>
