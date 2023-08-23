@@ -24,8 +24,6 @@ const Button = React.forwardRef(({ children, type, onClick, classes,style },ref)
   return (
     <button
       onClick={onClick}
-      style={style}
-
       ref={ref}
       type="button"
       className={`text-sm tablet:text-base p-1 laptop:p-2 m-1 laptop:m-2 rounded-lg flex items-center transition-all ease-out duration-300 ${

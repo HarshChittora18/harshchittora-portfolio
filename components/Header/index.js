@@ -19,7 +19,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
 
   useEffect(() => {
     setStyleClassname(
-      (prevState) => `${prevState} ${theme === "light" && "bg-white"}`
+      (prevState) => `${prevState} ${theme &&"light" }`
     );
   }, [theme]);
 
