@@ -18,17 +18,7 @@ const Footer = ({}) => {
             </h3>
             
             <p className="tablet:m-10 opacity-80 text-2xl">
-              If you have any inquiries or would like to discuss a potential
-              project, feel free to reach out to me through the contact email
-              provided below. I'm always open to collaboration and love working
-              with new clients.
-              <br>
-              </br>
-              <br>
-              </br>
-              Additionally, if you simply want to connect or
-              have any questions about my work, don't hesitate to drop me a
-              message. Looking forward to hearing from you soon!
+            Open for Opportunity: Reach out, and let's make things happen. Looking forward to hearing from you soon!
             </p>
             <Button type="primary">Say Hello!</Button>
             <div className="mt-10">
