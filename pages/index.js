@@ -93,7 +93,8 @@ export default function Home() {
           <Socials className="mt-2 laptop:mt-5" />
         </div>
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Work</h1>
+          <h1 className="text-2xl text-bold">Things I've made</h1>
+          {/* <h6 className="text-2xl text-bold">I've built different projects through the years, Scroll down to look into it!</h6> */}
 
           <div className="mt-10 grid grid-cols-1 mob:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2 justify-between gap-10">
             {data.projects.map((project) => (
@@ -129,10 +130,20 @@ export default function Home() {
           </div>
         )}
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-          <h1 className="tablet:m-10 text-2xl text-bold">Who I am</h1>
-          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            {data.aboutpara}
-          </p>
+          <h1 className="tablet:m-10 text-2xl text-bold">This is me in a nut-shell</h1>
+          <p className="tablet:m-10 mt-2 text-xl laptop:text-2xl w-full laptop:w-4/5 opacity-60">
+            {/* {data.aboutpara} */}
+            Hello, I'm Harsh Chittora, a passionate designer and developer based
+            in Jaipur, Rajasthan. I currently working as a Associate Enginner
+            at Nagarro, where I combine my creative skills with technical
+            expertise. Beyond crafting digital experiences, I am a dedicated
+            traveler, exploring the world for inspiration.
+          <br>
+          </br>
+          <br></br>
+          During my free
+            moments, I channel my creativity into crafting captivating designs.
+            Welcome to my portfolio!"</p>
         </div>
         <Footer />
       </div>
