@@ -18,7 +18,7 @@ const Footer = ({}) => {
             </h3>
             
             <p className="tablet:m-10 opacity-60 text-2xl">
-            Open for Opportunity: Reach out, and let's make things happen. Looking forward to hearing from you soon!
+            Open for Opportunity: Reach out, and let&apos;s make things happen. Looking forward to hearing from you soon!
             </p>
             <div className="tablet:m-10">
             <Button type="primary">Say Hello!</Button>
