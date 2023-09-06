@@ -48,7 +48,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={`relative ${data.showCursor && "cursor-none"}`}>
+    <div className={`relative ${data.showCursor && "cursor-none"}`} style={{marginLeft:"10%", marginRight:'10%'}}>
       {data.showCursor && <Cursor />}
       <Head>
         <title>{data.name}</title>
