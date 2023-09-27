@@ -47,7 +47,7 @@ const Resume = () => {
             >
               <div className="flex " style={{justifyContent:'space-between'}}>
                 <h1 className="text-3xl font-bold">{name}</h1>
-                <a href="/HarshChittora(CV).pdf" download> <Button style={{padding:'3px 5px'}} type="primary">Download </Button></a> 
+                <a href="/HarshChittoraCV.pdf" download> <Button style={{padding:'3px 5px'}} type="primary">Download </Button></a> 
                
               </div>
               <h2 className="text-xl mt-5">{resume.tagline}</h2>

@@ -47,7 +47,7 @@ const Edit = () => {
           imageSrc:
             "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
 
-          url: "http://chetanverma.com/",
+          url: "https://harshchittora.netlify.app/",
         },
       ],
     });
@@ -104,7 +104,7 @@ const Edit = () => {
         {
           id: uuidv4(),
           title: "New Link",
-          link: "www.chetanverma.com",
+          link: "https://harshchittora.netlify.app/",
         },
       ],
     });
@@ -431,7 +431,7 @@ const Edit = () => {
           </>
         )}
         {/* SERVICES */}
-        {currentTabs === "SERVICES" && (
+        {/* {currentTabs === "SERVICES" && ( */}
           <>
             <div className="mt-10">
               {data.services.map((service, index) => (
@@ -484,7 +484,7 @@ const Edit = () => {
               </Button>
             </div>
           </>
-        )}
+        {/* )} */}
         {currentTabs === "ABOUT" && (
           <div className="mt-10">
             <h1 className="text-2xl">About</h1>

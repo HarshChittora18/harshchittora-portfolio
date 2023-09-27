@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import Header from "../components/Header";
-import ServiceCard from "../components/ServiceCard";
+// import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
 import { useIsomorphicLayoutEffect } from "../utils";
@@ -48,7 +48,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={`relative ${data.showCursor && "cursor-none"}`} style={{marginLeft:"5%", marginRight:'5%'}}>
+    <div className={`relative ${data.showCursor && "cursor-none"}`} style={{marginLeft:"5%", marginRight:'5 %'}}>
       {data.showCursor && <Cursor />}
       <Head>
         <title>{data.name}</title>
@@ -109,7 +109,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
+        {/* <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
           <h1 className="tablet:m-10 text-2xl text-bold">Services</h1>
           <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
             {data.services.map((service, index) => (
@@ -120,7 +120,7 @@ export default function Home() {
               />
             ))}
           </div>
-        </div>
+        </div> */}
         {/* This button should not go into production */}
         {process.env.NODE_ENV === "development" && (
           <div className="fixed bottom-5 right-5">
@@ -143,7 +143,7 @@ export default function Home() {
           <br></br>
           During my free
             moments, I channel my creativity into crafting captivating designs.
-            Welcome to my portfolio!</p>
+            Thank you for watching!</p>
         </div>
         <Footer />
       </div>
